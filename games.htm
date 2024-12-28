@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JR-Games</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  gap: 40px;
+  margin-top: 100px;
+  padding: 20px;
+  max-width: 1800px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(222, 215, 215, 1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 33px rgba(255, 255, 255, 1);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  margin: 15px 0 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
+button{
+  padding: 10px;
+  margin: 30px;
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: 2px solid red;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+  </style>
+</head>
+<body bgcolor="black"><b style="color: white;">
+</b>
+  <div class="card-container">
+    <div class="card">
+      <img src="files/g.png" alt="Card Image 1" class="card-img">
+      <h3 class="card-title">Match the Object</h3>
+      <p class="card-description">The goal of the game is to match pairs of similar objects within a time limit or based on certain criteria</p>
+      <button>Play</button>
+    </div>
+    <div class="card">
+      <img src="files/g1.png" alt="Card Image 2" class="card-img">
+      <h3 class="card-title">Snail Three</h3>
+      <p class="card-description">In this fun, adventure-filled puzzle game, you control a snail named Bob. The objective is to guide Snail Bob through various levels filled with obstacles and puzzles to reach the exit while avoiding traps and dangers</p><button>Play</button>
+    </div>
+    <div class="card">
+      <img src="files/g2.png" alt="Card Image 3" class="card-img">
+      <h3 class="card-title">Guess the Card</h3>
+      <p class="card-description">The goal of the game is to guess or find a specific card from a set of face-down cards by remembering their positions or by making educated guesses based on clues.</p><button>Play</button>
+    </div>
+    <div class="card">
+      <img src="files/g3.png" alt="Card Image 4" class="card-img">
+      <h3 class="card-title">Chess</h3>
+      <p class="card-description">The journey may be tough, but the reward is always worth the fight.</p><button>Play</button>
+    </div>
+    <div class="card">
+      <img src="files/g4.png" alt="Card Image 5" class="card-img">
+      <h3 class="card-title">Puzzle</h3>
+      <p class="card-description">I told my computer I needed a break, and now it won’t stop sending me vacation ads!</p><button>Play</button>
+    </div>
+    <div class="card">
+        <img src="files/g5.png" alt="Card Image 5" class="card-img">
+        <h3 class="card-title">Find me</h3>
+        <p class="card-description">Enter the battle arena where strategy meets chance in a high-stakes dice competition! In Dice Royale</p><button>Play</button>
+      </div>
+      <div class="card">
+        <img src="files/g6.png" alt="Card Image 5" class="card-img">
+        <h3 class="card-title">Create and play</h3>
+        <p class="card-description">This game will let you roll a die, and the higher the number, the better your score. You can "roll" as many times as you like and try to get the highest number.</p><button>Play</button>
+      </div>
+      <div class="card">
+        <img src="files/g7.png" alt="Card Image 5" class="card-img">
+        <h3 class="card-title">Pop pop</h3>
+        <p class="card-description">The "pop" sound when bubbles burst is incredibly satisfying, making every match rewarding!</p><button>Play</button>
+      </div>
+      <div class="card">
+        <img src="files/g8.png" alt="Card Image 5" class="card-img">
+        <h3 class="card-title">Color me</h3>
+        <p class="card-description">This is a description for the fifth card. It provides details about the content of the card.</p><button>Play</button>
+      </div>
+      <div class="card">
+        <img src="files/g9.png" alt="Card Image 5" class="card-img">
+        <h3 class="card-title">Listening</h3>
+        <p class="card-description">The journey may be tough, but the reward is always worth the fight.</p><button>Play</button>
+      </div>
+      <div class="card">
+        <img src="files/g10.png" alt="Card Image 5" class="card-img">
+        <h3 class="card-title">Color me</h3>
+        <p class="card-description">Enter the battle arena where strategy meets chance in a high-stakes dice competition! In Dice Royale</p><button>Play</button>
+      </div>
+      <div class="card">
+        <img src="files/g11.png" alt="Card Image 5" class="card-img">
+        <h3 class="card-title">Find me</h3>
+        <p class="card-description">The "pop" sound when bubbles burst is incredibly satisfying, making every match rewarding!</p><button>Play</button>
+      </div>
+      
+  </div>
+</body>
+</html>

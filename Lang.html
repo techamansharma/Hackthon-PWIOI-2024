@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language and Literature for Kids</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(Videos/5651590-uhd_3840_2160_25fps.mp4);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        header {
+            background-color:  rgba(0, 0, 0, 0.8);
+            color: orange;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .activity {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #fff;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            text-align: center;
+            color: #333;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .card p {
+            padding: 10px;
+            color: #555;
+        }
+
+        .card button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #ff8585;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #ff4d4d;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color: white;
+        }
+        a:visited{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Language and Literature Activities</h1>
+        <p>Fun learning for kids aged 4 to 8</p>
+    </header>
+
+    <div class="container">
+        <div class="activity">
+            <div class="card">
+                <img src="Images/letters_recognize.png" alt="Loading">
+                <h3>Identiify Letters</h3>
+                <p>Be expert in understanding the Letters.</p>
+                <button><a href=""></a>Start</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/word_recognization.jpg" alt="Loading..">
+                <h3>Words Games</h3>
+                <p>Learn the magic of words and letters through interactive Word game.</p>
+                <button><a href="words.html">Play Now</a></button>
+            </div>
+
+            <div class="card">
+                <img src="Images/kids_writing.jpg" alt="Creative Writing">
+                <h3>Wanna Write ?</h3>
+                <p>Unleash your writing skills by writing words and sentences given.</p>
+                <p>Note that You should write in Limited Time</p>
+                <button><a href="Write.html">Start Writing</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects for Kids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            border: 1px solid black;
+            
+        }
+
+        section{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        header {
+            color: orange;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+            color:orange ;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .subject-card {
+            background-color: black;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .subject-card:hover {
+            transform: scale(1.05);
+        }
+
+        .subject-card h2 {
+            color: orange;
+            margin-bottom: 10px;
+        }
+
+        .subject-card p {
+            margin: 0;
+            color: white;
+            
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .bg-video{
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            object-fit: cover;
+            position: fixed;
+            filter: blur(1px);
+        }
+        .subject-card a{
+            text-decoration: none;
+            color: orange;
+        }
+        h3{
+            font-size: xx-large;
+        }
+    
+    </style>
+</head>
+
+<body background="Images/4-8_age_image_jpg">
+    <section>
+
+    <video autoplay muted loop class="bg-video">
+        <source src="https://res.cloudinary.com/dq7yftv7z/video/upload/v1735297668/gc5lkfb4lwq7wrjuymxk.mp4" type="video/mp4">
+    </video>
+    
+    <header>
+        <h1>Explore Fun Subjects!</h1>
+        <p>Pick a subject and dive into the world of learning and fun!</p>
+        <h3>Age From 9 to 12</h3>
+    </header>
+
+    <main>
+        <div class="subject-card">
+            <h2><a href="science.html">Science</a></h2>
+            <p> Science is the key to unlocking the mysteries of the universe!</p>
+        </div>
+        <div class="subject-card">
+            <h2> <a href="astronomy2.html">Astronomical science.</a></h2>
+            <p>Discover planets, stars, and the wonders of the universe!</p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="">Mind Teaser</a></h2>
+            <p> A Fun and challenging puzzle designed to stretch your thinking!</p>
+        </div>
+        <div class="subject-card">
+            <h2> <a href="">Maths </a></h2>
+            <p>Master numbers, patterns, and puzzles through fun challenges!</p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="">General Knowledge</a></h2>
+            <p>Explore the magic of nature, experiments, and discoveries!</p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="">Basic of Computers</a></h2>
+            <p>Sharpen your brain with riddles, logic, and problem-solving!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Learning Hub. All Rights Reserved.</p>
+    </footer>
+    </section>
+</body>
+</html>

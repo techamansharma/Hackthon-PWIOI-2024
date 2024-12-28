@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Verse - India's first Modern Education Platform for kids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="files/pw.png">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body bgcolor="black">
+    <main>
+        <!-- Background Video -->
+        <video class="video-background" autoplay muted loop>
+            <source src="files/kid2.mp4" type="video/mp4">
+        </video>
+        <header>
+            <div class="logo">
+                <img src="files/logo-jr.png" alt="PWIOI Logo">
+            </div>
+            <div class="but">
+                <span>
+                    <button onclick="window.location.href='about-us.html';" >About Us</button>
+                </span>
+                <span>
+                    <button class="">Edu Games</button>
+                </span>
+                <span>
+                    <button>Blog</button>
+                </span>
+                <span>
+                    <button>Pricing</button>
+                </span>
+            </div>
+            <div class="but2">
+                <span>
+                    <button id="loginButton" class="login">Login</button>
+                </span>
+                <span>
+                    <button onclick="window.location.href='signup.html';" class="appl">Sign UP</button>
+                </span>
+
+            </div>
+        </header>
+
+<!-- Login Pop-Up -->
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+        <style>
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+/* Pop-up Content */
+.popup-content {
+    background-color: #000000;
+    border: 2px dashed white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Close Button */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: #c5c1c1;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-popup:hover {
+    color: #ff4d4d;
+}
+
+/* Title */
+h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 20px;
+}
+
+label {
+    font-size: 24px;
+    color: #b6b0b0;
+    text-align: left;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #a19d9d;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+/* Submit Button */
+.submit-btn {
+    padding: 12px;
+    font-size: 16px;
+    width: 80px;
+    background-color: #ff9500;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ff6f00;
+}
+.popup.show {
+    display: flex;
+    opacity: 1;
+}
+
+            /* Pop-up styling 
+ .popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: orange;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: center;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #5c5959;
+}
+
+.close-popup:hover {
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: #4b5cef;
+    color: white;
+    padding: 20px;
+    font-size: 26px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #218838; */
+        </style>
+        <section class="middle">
+
+            <div class="middle1">
+                <span style="color: white;">Welcome to</span>
+                <span style="color: orange;">Junior Verse</span>
+            </div>
+            <div class="middle2">
+                <p style="color: white; ">India's first <span style="color: orange; font-size: larger;">Modern</span>
+                    learning platform</p>
+            </div>
+            <div class="broch"><button onclick="window.location.href='freecoun.html';" >Join <span style="color: orange;">FREE</span> Councelling</button></div>
+
+        </section>
+        <style>
+            button:hover{
+                transform: scale(1.02);
+                transition: 0.2s;
+                background-color: rgb(133, 88, 5);
+            }
+        </style>
+            <section class="middle">
+            <div class="head">
+                <span style="color: white;">Our</span>
+                <span style="color: orange;">Services</span>
+                <span style="color: white;">&</span>
+                <span style="color: orange;">Products</span>
+            </div>
+            <div class="card">
+
+                <span class="sub-card">
+                    <aside class="card-text">
+                        <div>
+                            <img src="files/contest.png" alt="">
+                        </div>
+                        <div>
+                            <div class="sott">Games</div>
+                            <div class="b">A fun-filled challenging games which Shape your Brain</div>
+<br>
+                            <h5>Unleash your imagination</h5>
+                            <h5>Every kid's talent gets a chance to sparkle</h5>
+                            <h5>Play and Earn points</h5>
+                            <button onclick="window.location.href='games.htm';" class="appl">Play Now</button>
+                        </div>
+                    </aside>
+                </span>
+                <span class="sub-card">
+                    <aside class="card-text">
+                        <div>
+                            <img src="files/tablet.png" alt="">
+                        </div>
+                        <div>
+                            <div class="sott">Tablets</div>
+                            <div class="b">Ergonomic and child-friendly design for comfort and better posture</div>
+<br>
+                            <h5>Tested and certified for safety <br> standards</h5>
+                            <h5>Restricted Social Media and Distraction</h5>
+                            <h5>A practical and stylish addition</h5>
+                            <button onclick="window.location.href='tab.html';" class="appl">Explore</button>
+                        </div>
+                    </aside>
+                </span>
+                
+            </div>
+        </section>
+     
+        <section class="middle">
+            <div class="head">
+                <span style="color: white;">Our<br></span>
+                <span style="color: orange;">Courses</span>
+            </div>
+            <div class="four-cards">
+                <span>
+                    <img src="" alt="">
+                    <div> Quick <br> <b style="color: orange;">Age-Based </b>Category Learning </div>
+                </span>
+                <span>
+                    <div><img src="files/4-year.png" alt=""></div>
+                    <div>Age <b style="color: orange;">4 to 8</b> </div> <br>
+                    <button onclick="window.location.href='subjects.html';" class="appl">Explore</button>
+                </span>
+                <span>
+                    <div><img src="files/12-year.png" alt=""></div>
+                    <div>Age <b style="color: orange;">9 to 12</b> </div> <br>
+                    <button onclick="window.location.href='jr-verse9-12.html';" class="appl">Explore</button>
+                </span>
+                <span>
+                    <div><img src="files/17-year.png" alt=""></div>
+                    <div><b style="color: orange;"></b>Age <b style="color: orange;">13 to 17</b> </div> <br>
+                    <button onclick="window.location.href='jr-verse-above12yr.html';" class="appl">Explore</button>
+                </span>
+            </div>
+        </section>
+        <style>
+            .card-text img {
+                width: 400px;
+                border-radius: 20px;
+                margin: 10px;
+            }
+            .card-text {
+       
+                border-radius: 10px;
+                display: grid;
+                align-items: center;
+            }
+
+            .card-text button {
+                margin: 30px;
+            }
+        </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Frequently Asked Questions</title>
+</head>
+<body bgcolor="black">
+    <style type="text/css">
+         details {
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin: 10px auto;
+        width: 90%;
+        padding: 10px;
+        color: white;
+    }
+    
+    details:hover {
+        box-shadow: 0 0 10px rgb(190, 183, 243);
+        transform: scale(1.01);
+        transition: 0.4s;
+    }
+    
+    summary {
+        padding: 18px 30px;
+        font-size: 1.5rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    p{
+        font-size: 1.3rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        padding: 15px 30px;
+        margin: 0;
+        color: wheat;
+    }
+    
+    .faq {
+        margin-top: 200px;
+        text-align: center;
+    }
+    
+    @media(max-width:1300px) {
+        .faq {
+            margin-top: 100px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .faq {
+            margin-top: 80px;
+        }
+    
+        details {
+            width: 90%;
+            padding: 5px;
+        }
+    
+        summary {
+            font-size: 0.7rem;
+            padding: 4px 2px;
+        }
+    
+        p {
+            font-size: 0.6rem;
+        }
+    }
+    
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: "Jost", sans-serif;
+    }
+    .slider-container{
+      width: 100%;
+      height: 70vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+    }
+    .slider-images{
+      display: flex;
+      align-items: center;
+      padding-left: 100px;
+      padding-right: 100px;
+      gap: 20px;
+    }
+    .slider-images img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .slider-img{
+      width: 110px;
+      border-radius: 20px;
+      cursor: pointer;
+      filter: brightness(0.6);
+      position: relative;
+      transition: 0.7s ease;
+    }
+    .slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+      height: 380px;
+    }
+    .slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+      height: 460px;
+    }
+    .slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+      height: 565px;
+    }
+    h1{
+      font-family: "Jost", sans-serif;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: #fff;
+      position: absolute;
+      left: 10%;
+      transition: 0.7s ease;
+    }
+    .details{
+      position: absolute;
+      bottom: 20px;
+      transition: 0.9s ease-in-out;
+    }
+    .details h2{
+      font-family: "Jost", sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      left: 40px;
+      margin-left: 30px;
+      text-align: left;
+      line-height: 40px;
+      color: #fff;
+      text-shadow: 0 0 10px black;
+      display: none;
+    }
+    .details p{
+      font-family: "Jost", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: orange;
+      text-align: left;
+      line-height: 33px;
+      text-shadow: 0 0 10px black,
+      0 0 20px black;
+      transition: 0.7s ease;
+      display: none;
+    } 
+    h2{
+       color: white;
+       margin-left: 10px;
+       margin-top: 10px;
+    }
+    .middle1 h2{
+        display: flex;
+        justify-content: center;
+        margin: 60px;
+        margin-top: 100px;
+        padding-top: 100px;
+    }
+</style>
+<section class="middle1">
+  <h2 class="head">Frequently Asked Questions</h2>
+     <details>
+              <summary>1. What is junior verse?</summary>
+                <p>
+                  junior verse is an educational online platform designed for kids and teenagers 
+                  aged 4 to 17. We offer interactive and engaging learning content on subjects like language
+                   and literacy, astronomy, art and craft, mind puzzles, science, math, and general knowledge—all
+                    accessible through our user-friendly tablet interface.
+                </p>
+            </details>
+            <details>
+                <summary>2. Who can use junior verse ?
+                </summary>
+                <p>
+                  Our platform is suitable for children aged 4 to 17. We have content and learning tools 
+                  tailored to different age groups, so whether you're just starting to learn or ready to explore
+                   advanced concepts, we’ve got something for everyone.
+                </p>
+            </details>
+            <details>
+                <summary>3. What subjects can my child learn on junior verse?</summary>
+                <p>
+                  Your child can explore a variety of subjects,including: <br>
+                  Language and Literacy – Reading, writing, and vocabulary building.
+                  Astronomy – Space exploration, stars, planets, and more.
+                  Art and Craft – Creative projects, drawing, painting, and DIY activities.
+                  Mind Puzzles – Brain teasers, logic puzzles, and critical thinking activities.
+                  Science – Fun experiments, biology, physics, and chemistry.
+                  Math – Arithmetic, geometry, algebra, and problem-solving.
+                  General Knowledge – Fun facts, geography, history, and current events.
+                  
+                </p>
+            </details>
+            <details>
+                <summary>4. How can my child access the content?
+                </summary>
+                <p>
+                  Our content is available through an interactive tablet app. Simply download the app,
+                   create an account, and your child can start exploring the subjects right away. The 
+                   interface is designed to be user-friendly and engaging for kids.
+                </p>
+            </details>
+            <details>
+                <summary>5. Is the platform suitable for different age groups?</summary> 
+                <p>
+                  Yes! We offer age-appropriate content for kids from 4 years old to 17 years old.
+                   The content adapts to the learning needs of different age groups, ensuring that
+                    each child can learn at their own pace and level.
+                </p>
+            </details>
+            <details>
+              <summary>6. Do I need an internet connection to use junior verse?</summary>
+              <p>
+                An internet connection is required for downloading new content and updating the app. 
+                However, once the content is downloaded, many features are accessible offline, allowing 
+                for continuous learning without an active internet connection.
+              </p>
+          </details>
+          <details>
+              <summary>7. Is the content safe and educational?</summary> 
+              <p>
+                Absolutely! All our content is created by qualified educators and experts in various 
+                fields. We ensure that every activity is both fun and educational, designed to enhance 
+                knowledge and skills in a safe environment.
+              </p>
+          </details>
+          <details>
+            <summary>8. Can I track my child’s progress?</summary>
+            <p>
+              Yes, our platform offers parental control features, allowing you to track your child’s
+               progress. You can monitor which lessons have been completed, the areas where they excel,
+                and areas that might need more attention.
+            </p>
+        </details>
+        <details>
+            <summary>9. How do I create an account?</summary> 
+            <p>
+              Creating an account is simple! Just visit our website or download the app, sign up with your email, and create a
+               password. You can then set up a profile for your child and start using the platform.
+            </p>
+        </details>
+        <details>
+          <summary>10. Can I provide feedback on the platform?</summary>  
+          <p>
+            Yes, we love hearing from our users! If you have suggestions or feedback on how we can improve the platform,
+             please reach out to us through our contact page or email us at [Feedback Email]. Your input helps us create a
+              better learning experience.
+          </p>
+      </details>
+    </section>
+
+        <footer>
+            <div>
+                <div class="footer-brand-name">
+                    <img src="files/logo-jr.png" alt="">
+                </div>
+                <aside>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-youtube"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-twitter"></span>
+                </aside>
+            </div>
+            <div>
+                <div class="data">SUPPORT</div>
+                <span>Contact Us</span>
+                <span>FAQs</span>
+                <span>Products</span>
+                <span>Contests</span>
+            </div>
+            <div>
+                <div class="data">Junior Verse</div>
+                <span>Our Story</span>
+                <span>Vision</span>
+                <span>Terms & Conditions</span>
+                <span>Privacy & Cookie policy</span>
+            </div>
+            <div>
+                <div class="data">Contact</div>
+                <span>+91 99xxxxxxxx</span>
+                <span>support@jrv.com</span>
+            </div>
+        </footer>
+      
+            
+        </body>

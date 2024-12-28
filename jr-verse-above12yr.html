@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects for above 12</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            border: 1px solid black;
+            
+        }
+
+        section{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        header {
+            color:orange;
+            padding: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .subject-card {
+            background-color:black;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .subject-card:hover {
+            transform: scale(1.05);
+        }
+
+        .subject-card h2 {
+            color: #6c63ff;
+            margin-bottom: 10px;
+        }
+
+        .subject-card p {
+            margin: 0;
+            color: white;
+            
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .bg-video{
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            object-fit: cover;
+            position: fixed;
+            filter: blur(1px);
+        }
+        .subject-card a{
+            text-decoration: none;
+            color:orange ;
+        }
+    
+    </style>
+</head>
+
+<body background="Images/4-8_age_image_jpg">
+    <section>
+
+    <video autoplay muted loop class="bg-video">
+        <source src="files/hackathonbg.mp4" type="video/mp4">
+    </video>
+    
+    <header>
+        <h1>Explore Fun Subjects!</h1>
+        <p>Pick a subject and dive into the world of learning and fun!</p>
+        <h2>Age From 13 to 17</h2>
+    </header>
+
+    <main>
+        <div class="subject-card">
+            <h2><a href="Advanced-Mathematics.html">Advanced Mathematics</a></h2>
+            <p>Algebra,
+                Geometry ,
+                Trigonometry , 
+                Introduction to Calculus , 
+                Probability <br> and  Statistics</p>
+        </div>
+        <div class="subject-card">
+            <h2> <a href="science-above12year.html">Science
+            </a></h2>
+            <p>Physics , Chemistry , Biology ,<br> Astronomy , Earth Science</p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="technology&coding.html">Technology & Coding </a></h2>
+            <p>programming languages , Web development , Data analytics</p>
+        </div>
+        <div class="subject-card">
+            <h2> <a href="languages&literature.html">Language & Literature</a></h2>
+            <p>Advanced vocabulary and writing ,
+                Poetry analysis and creative writing , Public speaking and debate skills
+                </p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="">History & Social Studies</a></h2>
+            <p>World history ,
+                Political science , 
+                Economics basics ,World geography and geopolitics ,
+                Sociology and anthropology ,
+                Famous leaders and revolutions </p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="">Environmental Studies</a></h2>
+            <p>Sustainability and green technology ,
+                Climate change impact and solutions ,
+                Conservation and biodiversity</p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="">Media Literacy & Digital Skills</a></h2>
+            <p>Understanding fake news and misinformation ,
+                Basics of photo and video editing ,
+                Social media etiquette and safety ,
+                Blogging and vlogging for beginners ,
+                Basics of podcasting and storytelling!</p>
+        </div>
+    </main>
+    
+
+    
+    </section>
+</body>
+</html>

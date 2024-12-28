@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects for Kids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            border: 1px solid black;
+        }
+
+        header {
+            color: red;
+            padding: 20px 0;
+            text-align: center;
+            background-image: url(4-8_age_image.jpg);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .subject-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .subject-card:hover {
+            transform: scale(1.05);
+        }
+
+        .subject-card h2 {
+            color: #6c63ff;
+            margin-bottom: 10px;
+        }
+
+        .subject-card p {
+            margin: 0;
+            color: #555;
+            
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .bg-video{
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            position: fixed;
+            filter: blur(1px);
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video autoplay muted loop class="bg-video">
+        <source src="Video/4-8_age_video.mp4" type="video/mp4">
+    </video>
+    
+    <header>
+        <h1>Explore Fun Subjects!</h1>
+        <p>Pick a subject and dive into the world of learning and fun!</p>
+    </header>
+
+    <main>
+        <div class="subject-card">
+            <h2><a href="">Language & Literacy</a></h2>
+            <p>Learn letters, words, and stories to grow your vocabulary!</p>
+        </div>
+        <div class="subject-card">
+            <h2> <a href="">Astronomy</a></h2>
+            <p>Discover planets, stars, and the wonders of the universe!</p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="">Art & Craft</a></h2>
+            <p>Unleash your creativity with colors, crafts, and designs!</p>
+        </div>
+        <div class="subject-card">
+            <h2> <a href="">Maths</a></h2>
+            <p>Master numbers, patterns, and puzzles through fun challenges!</p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="">Science</a></h2>
+            <p>Explore the magic of nature, experiments, and discoveries!</p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="">Mind Puzzles</a></h2>
+            <p>Sharpen your brain with riddles, logic, and problem-solving!</p>
+        </div>
+        <div class="subject-card">
+            <h2><a href="">General Knowledge</a></h2>
+            <p>Boost your knowledge about the world around you!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Learning Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

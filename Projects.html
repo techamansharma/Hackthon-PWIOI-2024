@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        .upload-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-container h2 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .upload-container input[type="file"] {
+            display: block;
+            margin: 20px auto;
+            font-size: 1rem;
+        }
+
+        .upload-container button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .upload-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload Your File</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*, .pdf, .docx, .txt">
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>

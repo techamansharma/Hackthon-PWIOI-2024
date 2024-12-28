@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Science!</title>
+    <style>
+        /* General styles for the whole page */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+            overflow-y: auto; /* Ensure the page can scroll */
+        }
+
+        /* Video background */
+        .video-background {
+            position: fixed; /* Keep the video fixed in place */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Ensure it stays behind the content */
+        }
+
+        /* Header section */
+        header {
+            background-color: #ffcc00;
+            color: #333;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #003366;
+        }
+
+        header p {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #003366;
+        }
+
+        /* Content section */
+        .container {
+            padding: 20px;
+            position: relative; /* Ensure content is on top of the video */
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            color: #ff6600;
+        }
+
+        .science-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .science-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Questions section */
+        .questions-section {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .question {
+            background-color: #f8f8f8;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .question p {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+            color: #003366;
+        }
+
+        .answer {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #2d7bba;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 15px 0;
+            color: #003366;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video class="video-background" autoplay muted loop>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to the World of Science!</h1>
+        <p>Explore, Discover, and Have Fun with Science!</p>
+    </header>
+
+    <!-- Content Section -->
+    <div class="container">
+        <!-- Science Information -->
+        <div class="science-info">
+            <h2>What is Science?</h2>
+            <p>Science is the exploration of the natural world. It helps us understand the mysteries of life, the universe, and everything in between. Scientists use observations, experiments, and evidence to explain how things work. Whether it's studying planets far away or learning how plants grow, science is all around us!</p>
+            
+            <h2>Branches of Science</h2>
+            <p>Science is divided into many branches. Each branch studies a different aspect of the world we live in. Some of the major branches include:</p>
+            <ul>
+                <li><strong>Physics:</strong> The study of matter, energy, and the forces that govern the universe.</li>
+                <li><strong>Chemistry:</strong> The study of substances and how they interact, combine, and change.</li>
+                <li><strong>Biology:</strong> The study of living organisms and their environments.</li>
+                <li><strong>Earth Science:</strong> The study of the Earth, including its atmosphere, oceans, and geology.</li>
+                <li><strong>Astronomy:</strong> The study of the stars, planets, and the universe beyond Earth.</li>
+            </ul>
+        </div>
+
+        <!-- Questions Section -->
+        <div class="questions-section">
+            <h2>Science Fun Questions!</h2>
+
+            <div class="question">
+                <p>1. What is the smallest planet in our solar system?</p>
+                <p class="answer">Ans:Mercury</p>
+            </div>
+
+            <div class="question">
+                <p>2. What is the chemical symbol for water?</p>
+                <p class="answer">Ans:H₂O</p>
+            </div>
+
+            <div class="question">
+                <p>3. What gas do plants absorb from the atmosphere for photosynthesis?</p>
+                <p class="answer">Ans:Carbon Dioxide (CO₂)</p>
+            </div>
+
+            <div class="question">
+                <p>4. What planet is known as the "Red Planet"?</p>
+                <p class="answer">Ans:Mars</p>
+            </div>
+
+            <div class="question">
+                <p>5. What is the process by which plants make their own food?</p>
+                <p class="answer">Ans:Photosynthesis</p>
+            </div>
+
+            <div class="question">
+                <p>6. What is the closest star to Earth?</p>
+                <p class="answer">Ans:The Sun</p>
+            </div>
+
+            <div class="question">
+                <p>7. How many planets are in our solar system?</p>
+                <p class="answer">Ans:8 planets</p>
+            </div>
+
+            <div class="question">
+                <p>8. What is the largest animal on Earth?</p>
+                <p class="answer">Ans:Blue Whale</p>
+            </div>
+
+            <div class="question">
+                <p>9. What is the hardest natural substance on Earth?</p>
+                <p class="answer">Ans:Diamond</p>
+            </div>
+
+            <div class="question">
+                <p>10. What is the powerhouse of a cell?</p>
+                <p class="answer">Ans:Mitochondria</p>
+            </div>
+
+            <div class="question">
+                <p>11. What is the name of the process by which plants release water vapor into the air?</p>
+                <p class="answer">Ans:Transpiration</p>
+            </div>
+
+            <div class="question">
+                <p>12. What is the force that pulls objects toward Earth?</p>
+                <p class="answer">Ans:Gravity</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Science Exploration | All rights reserved</p>
+    </footer>
+
+</body>
+</html>

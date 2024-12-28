@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style type="text/css">
+        body{
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            height: 550px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            margin-left: 20px;
+        }
+        main{
+              display: grid;
+              grid-template-columns: 4fr 8fr;
+              margin: 20px;
+        }
+        .image{
+            float: left;
+        
+        }
+        form{
+            float: right;
+            margin-top: -50px;
+        }
+        form span{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .callback{
+            border: 1px solid red;
+            background-color: #ea1531;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 300px;
+        }
+        .forminput input{
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 300px;
+        }
+        .inputbox input{
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 300px;
+            height: 100px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <section class="image">
+             <img src="files/kiddo.jpg" alt="" height="420px" width="380px">
+        </section>
+        <form>
+         <h3>Have Further Questions?</h3>
+         <p>
+           We would learn to hear from you. Please feel contact us with any questions or concerns using this  <br> form. 
+         </p>
+         <div class="forminput">
+           <span><input type="text" placeholder="Kid's Name"></span>
+           <span ><input type="text" placeholder="Parent's Name"></span>
+           <span ><input type="text" placeholder="parent's Email"></span> 
+            <span><input type="text" placeholder="Phone Number"></span> 
+           <div class="inputbox"><input type="text" placeholder=" Write your Message here"></div> 
+            <span class="callback">
+                Request a Call Back <i class="bi bi-telephone"></i>
+            </span>
+         </div>
+        </form>
+    </main>
+</body>
+</html>

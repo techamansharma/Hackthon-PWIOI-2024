@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language and Communication Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(0, 0, 0);
+            color: orange;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+            background: rgba(1, 1, 1, 0.9);
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section p {
+            color: white;
+            font-size: 20px;
+        }
+
+        h2 {
+            color: orange;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: white;
+            font-size: 14px;
+            display: block;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 12px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button.correct {
+            background-color: green;
+            color: white;
+        }
+
+        button.wrong {
+            background-color: red;
+            color: white;
+        }
+
+        .bg-video {
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            object-fit: cover;
+            position: fixed;
+            filter: blur(1px);
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop class="bg-video">
+        <source src="files/853819-hd_1920_1080_25fps.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Language and Communication Skills</h1>
+        <p>A comprehensive overview of key topics in language and communication</p>
+    </header>
+    <main>
+        <section id="vocabulary-writing">
+            <h2>Advanced Vocabulary and Writing</h2>
+            <p>Advanced vocabulary and writing skills help enhance communication, making it more precise and engaging. Mastery of vocabulary and writing techniques is crucial for academic and professional success.</p>
+            <ul>
+                <li>
+                    Q What is the meaning of the word "ambiguous"?
+                    <br>
+                    <button onclick="checkAnswer(this, true)">A) Having more than one possible meaning</button>
+                    <button onclick="checkAnswer(this, false)">B) Clear and precise</button>
+                    <button onclick="checkAnswer(this, false)">C) Expressing confusion</button>
+                    <button onclick="checkAnswer(this, false)">D) Related to knowledge</button>
+                </li>
+                <li>
+                    Q Which of the following is an example of a compound sentence?
+                    <br>
+                    <button onclick="checkAnswer(this, true)">A) I went to the store, and I bought milk.</button>
+                    <button onclick="checkAnswer(this, false)">B) I went to the store.</button>
+                    <button onclick="checkAnswer(this, false)">C) She enjoys reading books.</button>
+                    <button onclick="checkAnswer(this, false)">D) After dinner, we went to the park.</button>
+                </li>
+            </ul>
+        </section>
+
+        <section id="poetry-creative-writing">
+            <h2>Poetry Analysis and Creative Writing</h2>
+            <p>Poetry analysis and creative writing develop critical thinking and imagination, allowing one to interpret and create expressive works of art. These skills encourage both emotional and intellectual engagement with language.</p>
+            <ul>
+                <li>
+                    Q Which of the following is an example of metaphor in poetry?
+                    <br>
+                    <button lick="cheoncckAnswer(this, true)">A) Her voice was music to my ears.</button>
+                    <button onclick="checkAnswer(this, false)">B) The wind whispered through the trees.</button>
+                    <button onclick="checkAnswer(this, false)">C) He was as brave as a lion.</button>
+                    <button onclick="checkAnswer(this, false)">D) The stars are like diamonds in the sky.</button>
+                </li>
+                <li>
+                    Q What is the primary purpose of free verse poetry?
+                    <br>
+                    <button onclick="checkAnswer(this, true)">A) To avoid a set structure and allow more freedom in expression</button>
+                    <button onclick="checkAnswer(this, false)">B) To rhyme at the end of each line</button>
+                    <button onclick="checkAnswer(this, false)">C) To follow a strict meter and rhythm</button>
+                    <button onclick="checkAnswer(this, false)">D) To use specific syllabic patterns in each line</button>
+                </li>
+            </ul>
+        </section>
+        <section id="public-speaking">
+            <h2>Public Speaking and Debate Skills</h2>
+            <p>Public speaking and debate skills are essential for effective communication in various professional and academic settings. These skills help convey ideas clearly and persuasively to an audience.</p>
+            <ul>
+                <li>
+                    Q What is an important strategy when preparing for a public speech?
+                    <br>
+                <button onclick="checkAnswer(this, true)">A) Speaking as quickly as possible</button>
+                <button onclick="checkAnswer(this, false)">B) Practicing in front of a mirror or a small group</button>
+                <button onclick="checkAnswer(this, false)">C) Focusing only on the conclusion</button>
+                <button onclick="checkAnswer(this, false)">D) Using only visual aids</button>
+                <br><br>
+                </li>
+                <li> 
+                    Q What is the primary objective of a debate? <br>
+                   <button onclick="checkAnswer(this, true)">A) To express personal opinions</button>
+                   <button onclick="checkAnswer(this, false)">B) To persuade the audience to agree with a specific oncstance</button>
+                   <button onclick="checkAnswer(this, false)">C) To present factual information without any argument</button>
+                   <button onclick="checkAnswer(this, false)">D) To entertain the audience with jokes</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function checkAnswer(button, isCorrect) {
+            if (isCorrect) {
+                button.classList.add('correct');
+            } else {
+                button.classList.add('wrong');
+            }
+            // Disable all buttons in the question group
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => btn.disabled = true);
+        }
+    </script>
+</body>
+
+</html>

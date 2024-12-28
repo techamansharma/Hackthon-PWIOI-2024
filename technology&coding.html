@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Topics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(0, 0, 0);
+            color: orange;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+            background: rgba(1, 1, 1, 0.9);
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section p {
+            color: white;
+            font-size: 20px;
+
+        }
+
+        h2 {
+            color: orange;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: white;
+            font-size: 15px;
+            display: block;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button.correct {
+            background-color: green;
+            color: white;
+        }
+
+        button.wrong {
+            background-color: red;
+            color: white;
+        }
+
+        .bg-video {
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            object-fit: cover;
+            position: fixed;
+            filter: blur(1px);
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop class="bg-video">
+        <source src="files/2278095-hd_1920_1080_30fps.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Tech Topics</h1>
+        <p>A comprehensive overview of key topics in various tech fields</p>
+    </header>
+    <main>
+        <section id="programming-languages">
+            <h2>Programming Languages</h2>
+            <p>Programming languages are used to communicate with computers and create software. They vary in syntax and functionality, from low-level to high-level languages.</p>
+            <ul>
+                <li>Q What does "OOP" stand for in programming? <br>
+                 <button onclick="checkAnswer(this, false)">A) Object-Oriented Programming</button>
+                 <button onclick="checkAnswer(this, false)">B) Optimized Operational Programming</button>
+                 <button onclick="checkAnswer(this, true)">C) Output-Oriented Programming</button>
+                 <button onclick="checkAnswer(this, false)">D) Original Object Programming</button>
+                <br><br>
+            </li>
+                <li>Q Which language is primarily used for web development?<br>
+                 <button onclick="checkAnswer(this, false)">A) C++</button>
+             <button onclick="checkAnswer(this, true)">B) JavaScript</button>
+             <button onclick="checkAnswer(this,false)">C) Python</button>
+                 <button onclick="checkAnswer(this, false)">D) Ruby</button>
+                 </li>
+            </ul>
+            <section id="web-development">
+            <h2>Web Development</h2>
+            <p>Web development involves creating websites and applications for the internet. It includes front-end (client-side) and back-end (server-side) development.</p>
+            <ul>
+                <li>Q Which language is primarily used for styling web pages? <br>
+                <button onclick="checkAnswer(this, true)">A) HTML</button>
+                <button onclick="checkAnswer(this, true)">B) CSS</button>
+                <button onclick="checkAnswer(this, false)">C) JavaScript</button>
+                <button onclick="checkAnswer(this, true)">D) PHP</button>
+                <br><br>
+                </li>
+                <li>Q Which protocol is commonly used to fetch data from a web server? <br>
+                <button onclick="checkAnswer(this, true)">A) FTP</button>
+                <button onclick="checkAnswer(this, true)">B) HTTP</button>
+                <button onclick="checkAnswer(this, true)">C) SMTP</button>
+                <button onclick="checkAnswer(this, false)">D) IMAP</button>
+                </li>
+            </ul>
+        </section>
+
+        <section id="data-analytics">
+            <h2>Data Analytics</h2>
+            <p>Data analytics involves analyzing raw data to find trends, patterns, and insights. It is used in various fields to make informed decisions based on data.</p>
+            <ul>
+                <li>Q What is the primary purpose of data cleaning?<br>
+                <button onclick="checkAnswer(this, true)">A) To increase data size</button>
+                <button onclick="checkAnswer(this, false)">B) To remove inconsistencies or errors</button>
+                <button onclick="checkAnswer(this, true)">C) To create charts and graphs</button>
+                <button onclick="checkAnswer(this, true)">D) To collect more data</button>
+                <br><br>
+                </li>
+                <li>Q Which software is widely used for data analysis and visualization?<br>
+                <button onclick="checkAnswer(this, true)">A) Excel</button>
+                <button onclick="checkAnswer(this, true)">B) Photoshop</button>
+                <button onclick="checkAnswer(this, false)">C) MATLAB</button>
+                <button onclick="checkAnswer(this, true)">D) Illustrator</button>
+                </li>
+            </ul>
+        </section>
+
+        <section id="coding">
+            <h2>Coding</h2>
+            <p>Coding refers to the process of writing instructions for a computer to perform specific tasks. It involves writing algorithms and solving problems using different programming languages.</p>
+            <ul>
+                <li>Q What is the correct syntax for a for loop in Python? <br>
+            <button onclick="checkAnswer(this, true)">A) for i in range(5):</button>
+            <button onclick="checkAnswer(this, true)">B) for i = 0 to 5:</button>
+                <button onclick="checkAnswer(this,true)">C) for i from 1 to 5:</button>
+                <button onclick="checkAnswer(this, false)">D) for i in [0, 1, 2, 3, 4, 5]:</button>
+            </li>
+                <br><br>
+                <li>Q Which of the following is NOT a valid variable name in most programming languages? <br>
+                <button onclick="checkAnswer(this, false)">A) myVariable</button>
+                <button onclick="checkAnswer(this, true)">B) _variable</button>
+                <button onclick="checkAnswer(this, true)">C) 2variable</button>
+                <button onclick="checkAnswer(this, true)">D) variable2</button>
+                </li>
+            </ul>
+        </section>
+
+        <button style="background-color: orange; padding: 5px; margin-left: 5px;" >
+            <a href="" style="text-decoration: none; color: white; font-size: 15px ;font-weight: bold;  ">Explore more </a>
+        </button>
+    </main>
+
+    <script>
+        function checkAnswer(button, isCorrect) {
+            if (isCorrect) {
+                button.classList.add('correct');
+            } else {
+                button.classList.add('wrong');
+            }
+            // Disable all buttons in the question group
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => btn.disabled = true);
+        }
+    </script>
+</body>
+
+</html>

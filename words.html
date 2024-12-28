@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Games</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            flex-direction: column;
+            padding: 20px;
+            overflow-x: hidden;
+            margin-top: 50px;
+        }
+        h1 {
+            margin-bottom: 40px;
+            font-size: 36px;
+            color: #2c3e50;
+        }
+        .game-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        /* Memory Card Game */
+        .memory-game {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            gap: 15px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .memory-card {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .memory-card:hover {
+            background-color: #2980b9;
+        }
+
+        /* Card Guessing Game */
+        .card-guessing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card-guessing .card {
+            width: 150px;
+            height: 200px;
+            background-color: #f1c40f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .card-guessing .card:hover {
+            transform: scale(1.1);
+        }
+        .card-guessing p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* Word Search Game (Correct 10x10 Grid) */
+        .word-search {
+            display: grid;
+            grid-template-columns: repeat(10, 40px);
+            grid-template-rows: repeat(10, 40px);
+            gap: 5px;
+            text-align: center;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 450px; /* Adjust width for 10x10 grid */
+            height: 330px; /* Adjust height for 10x10 grid */
+            
+        }
+        .word-search div {
+            width: 40px;
+            height: 40px;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .word-search div:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .word-search div.highlight {
+            background-color: yellow;
+        }
+
+        /* Scrambled Word Guessing Game */
+        .scrambled-word {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .scrambled-word .word {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 10px;
+            color: #3498db;
+        }
+        .scrambled-word .input {
+            font-size: 18px;
+            padding: 5px;
+            width: 200px;
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+        }
+        .scrambled-word .input:focus {
+            border-color: #3498db;
+        }
+        .scrambled-word .button {
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .scrambled-word .button:hover {
+            background-color: #1f639d;
+        }
+        .scrambled-word .feedback {
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Word Games</h1>
+
+    <div class="game-container">
+        <!-- Memory Card Game -->
+        <div class="memory-game">
+            <div class="memory-card">A</div>
+            <div class="memory-card">B</div>
+            <div class="memory-card">A</div>
+            <div class="memory-card">C</div>
+            <div class="memory-card">D</div>
+            <div class="memory-card">C</div>
+            <div class="memory-card">B</div>
+            <div class="memory-card">D</div>
+        </div>
+
+        <!-- Card Guessing Game -->
+        <div class="card-guessing">
+            <div class="card">?</div>
+            <p>Guess the Card</p>
+            <button class="button">Guess</button>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <!-- Word Search Game (Correct 10x10 Grid) -->
+        <div class="word-search">
+            <div>H</div><div>E</div><div>L</div><div>L</div><div>O</div><div>W</div><div>O</div><div>R</div><div>L</div><div>D</div>
+            <div>A</div><div>P</div><div>C</div><div>A</div><div>B</div><div>A</div><div>G</div><div>I</div><div>S</div><div>J</div>
+            <div>P</div><div>Y</div><div>L</div><div>V</div><div>O</div><div>R</div><div>A</div><div>H</div><div>S</div><div>T</div>
+            <div>M</div><div>E</div><div>R</div><div>S</div><div>Y</div><div>E</div><div>Q</div><div>V</div><div>U</div><div>W</div>
+            <div>X</div><div>F</div><div>G</div><div>U</div><div>K</div><div>P</div><div>Y</div><div>R</div><div>A</div><div>U</div>
+            <div>L</div><div>F</div><div>Q</div><div>M</div><div>B</div><div>C</div><div>P</div><div>D</div><div>J</div><div>W</div>
+            <div>Z</div><div>Y</div><div>G</div><div>U</div><div>X</div><div>H</div><div>O</div><div>V</div><div>J</div><div>K</div>
+        </div>
+
+        <!-- Scrambled Word Guessing Game -->
+        <div class="scrambled-word">
+            <div class="word">WARE</div>
+            <input type="text" class="input" placeholder="Guess the word">
+            <button class="button">Submit</button>
+            <div class="feedback"></div>
+        </div>
+    </div>
+
+</body>
+</html>
